@@ -18,7 +18,7 @@ export const goodsFromServer = [
 export enum SortType {
   NONE = 'none',
   ALPHABETICALLY = 'alphabetically',
-  BY_LENGTH = 'by_lrngth',
+  BY_LENGTH = 'by_length',
 }
 
 export const App: React.FC = () => {
@@ -66,7 +66,7 @@ export const App: React.FC = () => {
 
         <button
           type="button"
-          className={`button is-info ${isReversed ? '' : 'is-light'}`}
+          className={isReversed ? 'button is-info' : 'button is-info is-light'}
           onClick={() => setIsReversed(!isReversed)}
         >
           Reverse
